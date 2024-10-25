@@ -1,10 +1,10 @@
 :root {
   --primary-black-color: #111111;
   --primary-white-color: #fafafa;
-  --primary-accent-color: ;
+  --beckground-black-color: #1e1823;
   --secondary-accent-color: ;
-  --active-color: ;
-  --secondary-white-color: ;
+  --active-color: #fd9222;
+  --active-background-color: #fcf1e0;
 }
 
 body {
@@ -24,10 +24,20 @@ h6 {
   margin-bottom: 0;
 }
 
-ul {
+ul,
+ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 img {
@@ -36,16 +46,8 @@ img {
   height: auto;
 }
 
-.link {
-  text-decoration: none;
-}
-
 .link:active {
   color: var(--active-color);
-}
-
-.list {
-  list-style-type: none;
 }
 
 .visually-hidden {
@@ -68,3 +70,104 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* #region HEADER */
+
+.header {
+}
+.container {
+}
+.header-logo-link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  color: var(--primary-black-color);
+}
+.header-logo-spam {
+  font-style: italic;
+}
+.header-nav {
+}
+.header-list {
+}
+.header-item {
+}
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--active-color);
+}
+.header-soc-list {
+}
+.header-soc-item {
+}
+.header-soc-link {
+}
+
+/* #endregion HEADER */
+
+/* #region HERO*/
+.hero {
+  background-color: var(--beckground-black-color);
+}
+.hero-title {
+}
+.hero-text {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: var(--primary-white-color);
+}
+
+.hero-btn {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--primary-white-color);
+  background-color: var(--active-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--active-color);
+  background-color: var(--active-background-color);
+}
+
+.hero-made-link {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--primary-white-color);
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 12px 28px;
+  width: 159px;
+  height: 41px;
+}
+
+.hero-made-link:hover,
+.hero-made-link:focus {
+  color: var(--active-color);
+  border-color: var(--active-color);
+}
+
+.hero-scrol-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.03em;
+  color: var(--primary-white-color);
+}
+
+.hero-scrol-link:hover,
+.hero-scrol-link:focus {
+  color: var(--active-color);
+}
+/* #endregion HERO*/
